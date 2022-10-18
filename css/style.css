@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --color-primary:#5cb85f;
+    --color-bg1:#e5e5e5; 
+    --color-bg2:#f1f3ff;
+    --transition : all 400ms ease;
+}
+
+/* ======== global style ======== */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background: var(--color-bg1);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    color: black;
+}
+
+h2{
+    word-wrap: normal;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+p{
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* ======== end global style ======== */
+
+
+/* ======== navbar ======== */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-list{
+    background-color: var(--color-bg2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.navbar-item{
+    margin: 0 20px;
+}
+
+.navbar-item:last-child{
+    margin-right: 50px;
+}
+
+.toggle{
+    margin: 0 20px;
+    display: none;
+}
+
+.navbar-link{
+    font-weight: bold;
+}
+
+.navbar-link:hover{
+    color: var(--color-primary);
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navbar-button{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-primary);
+    color: var(--color-bg2);
+    /* untuk bikin rounded */
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.navbar-button:hover{
+    color: black;
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+@media screen and (max-width:912px) {
+    .navbar-list{
+        flex-wrap: wrap;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .navbar-button{
+        display: block;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+
+}
+/* ======== end navbar ========  */
