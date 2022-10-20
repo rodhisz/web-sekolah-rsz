@@ -223,3 +223,16 @@ header{
     border: 2px solid var(--color-primary);
   }
 /* ======== end header ========  */
+
+/* ======== benefit ========  */
+.benefit{
+    margin-top: 5rem;
+    padding-top: 1rem;
+}
+
+.benefit__header{
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* ======== end benefit ========  */
+
