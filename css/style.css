@@ -38,14 +38,14 @@ a {
 
 h2{
     word-wrap: normal;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     line-height: 1.5em;
 }
 
-p{
+/* p{
     margin: 1rem 0;
     line-height: 2rem;
-}
+} */
 
 img{
     width: 100%;
@@ -175,7 +175,8 @@ nav{
 /* ======== header ========  */
 header{
     display: flex;
-    flex-direction: column;
+    align-items: stretch;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -187,6 +188,7 @@ header{
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
@@ -238,7 +240,7 @@ header{
 
 .benefit__container {
     display: grid;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-top: 4rem;
 }
 
@@ -285,9 +287,76 @@ header{
 .benefit__img:hover{
     transform: scale(1.1);
 }
-
-
-
-
 /* ======== end benefit ========  */
+
+/* ======== why us ========  */
+
+.whyus{
+    background-color: var(--color-bg2);
+}
+
+.whyus__wave{
+    margin-top: -8px;
+    z-index: 99;
+}
+
+.whyus__header{
+    margin-top: -100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.whyus__list{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.whyus__item{
+    border: 1px solid var(--color-lightblue);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: var(--color-bg1);
+    margin: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    justify-items: center;
+}
+
+.whyus__text p{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.whyus__text h3{
+    margin-top: 1rem;
+}
+
+.whyus__item:hover{
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+/* ======== end why us ========  */
+
+/* ======== media benefit & why us ========  */
+
+@media  screen and (max-width: 768px) {
+    .benefit__container{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .benefit__row{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 1rem;
+    }
+    .benefit__title{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .whyus__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ======== end media benefit & why us ========  */
 
