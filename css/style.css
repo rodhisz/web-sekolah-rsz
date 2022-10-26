@@ -353,6 +353,14 @@ header{
         margin-bottom: 1rem;
         text-align: center;
     }
+
+    .benefit__title, p{
+        text-align: center;
+    }
+
+    .whyus__header{
+        margin-top: -30px;
+    }
     .whyus__list{
         grid-template-columns: repeat(2, 1fr);
     }
