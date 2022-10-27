@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
     background: var(--color-bg1);
 }
@@ -208,11 +208,13 @@ header {
 .header__title {
     color: var(--color-bg2);
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .header__text {
     color: var(--color-bg2);
     font-size: 1.3rem;
+    /* padding: 0 200px; */
 }
 
 .btn__start {
@@ -263,6 +265,7 @@ header {
     font-size: 1.4rem;
     font-weight: lighter;
     font-style: italic;
+    margin-bottom: 1.5rem;
 }
 
 .uil {
@@ -428,7 +431,7 @@ aside {
 }
 
 .info h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 1rem;
 }
 
@@ -443,4 +446,73 @@ aside {
     -moz-box-shadow: 6px 6px 5px 2px rgba(0, 0, 0, 0.17);
     transition: var(--transition);
 }
+
+@media screen and (max-width: 768px) {
+    aside{
+        padding: 0 50px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    .info p {
+        font-size: 13px;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .uil {
+        background-color: var(--color-lightblue);
+        color: var(--color-primary);
+        font-size: small;
+        margin-right: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutus__card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .aboutus__right{
+        justify-content: center;
+    }
+}
 /* ======== end about us ========  */
+
+/* ======== footer ========  */
+
+footer{
+    background-color: var(--color-bg2);
+    padding: 30px;
+    text-align: center;
+}
+
+/* ======== end footer ========  */
+
+/* ======== floating ========  */
+.floating{
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 40px;
+    box-shadow: 6px 6px 5px 2px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 6px 6px 5px 2px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 6px 6px 5px 2px rgba(0, 0, 0, 0.17);
+}
+
+.fab{
+    color: white;
+}
+
+.floating:hover{
+    transform: scale(1.1);
+    transition: var(--transition);
+    
+}
+/* ======== end floating ========  */
