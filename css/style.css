@@ -331,6 +331,7 @@ header {
     line-height: 2rem;
     text-align: center;
     justify-items: center;
+    transition: var(--transition);
 }
 
 .whyus__text p {
@@ -424,6 +425,7 @@ aside {
     gap: 2rem;
     border-radius: 1rem;
     background-color: var(--color-bg2);
+    transition: var(--transition);
 }
 
 .aboutus__img{
